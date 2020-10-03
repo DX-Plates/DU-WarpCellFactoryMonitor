@@ -9,7 +9,7 @@ end
 
 local tableName = "Pure Ingot Status" --export:
 local tableNameFontsize = "15em" --export:
-local tableFontSize = "20px" --export:
+local tableFontSize = "6vw" --export:
 local tableWidth = "100%" --export:
 local tableHeight = "100%" --export:
 local BGColor = "#252525" --export: This sets the screen background color
@@ -178,64 +178,55 @@ html = [[
 		<th>Levels</th>
 		<th>Total Ore</th>
 	<tr>
-		<td>
 		<th>Iron</th>
 		<th>]]..percentIron..[[%</th>
 		<th>]]..massIron..measurement..[[</th>
-		</td>
-		<td>
+	</tr>
+	<tr>
 		<th>Carbon</th>
 		<th>]]..percentCarbon..[[%</th>
 		<th>]]..massCarbon..measurement..[[</th>
 		</td>
 	</tr>
 	<tr>
-		<td>
 		<th>Aluminium</th>
 		<th>]]..percentAluminium..[[%</th>
 		<th>]]..massAluminium..measurement..[[</th>
-		</td>
-		<td>
+	</tr>
+	<tr>
 		<th>Silicon</th>
 		<th>]]..percentSilicon..[[%</th>
 		<th>]]..massSilicon..measurement..[[</th>
-		</td>
 	</tr>
 	<tr>
-		<td>
 		<th>Calcium</th>
 		<th>]]..percentCalcium..[[%</th>
 		<th>]]..massCalcium..measurement..[[</th>
-		</td>
-		<td>
+	</tr>
+	<tr>
 		<th>Sodium</th>
 		<th>]]..percentSodium..[[%</th>
 		<th>]]..massSodium..measurement..[[</th>
-		</td>
 	</tr>
 	<tr>
-		<td>
 		<th>Copper</th>
 		<th>]]..percentCopper..[[%</th>
 		<th>]]..massCopper..measurement..[[</th>
-		</td>
-		<td>
+	</tr>
+	<tr>
 		<th>Sulfur</th>
 		<th>]]..percentSulfur..[[%</th>
 		<th>]]..massSulfur..measurement..[[</th>
-		</td>
 	</tr>
-		<tr>
-		<td>
+	<tr>
 		<th>Silver</th>
 		<th>]]..percentSilver..[[%</th>
 		<th>]]..massSilver..measurement..[[</th>
-		</td>
-		<td>
+	</tr>
+	<tr>
 		<th>Lithium</th>
 		<th>]]..percentLithium..[[%</th>
 		<th>]]..massLithium..measurement..[[</th>
-		</td>
 	</tr>
 
 </table>
