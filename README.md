@@ -1,6 +1,8 @@
 # DU-WarpCellFactoryMonitor
 LUA Script for monitoring Pure Ingot stock in a Warp Cell Factory. 
 
+![Ore Status Dashboard](/ContainerMonitor.PNG)
+
 # Setup
 You'll need 2 programming boards, one for each monitor screen.
 
