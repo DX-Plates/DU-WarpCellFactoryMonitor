@@ -73,10 +73,10 @@ local percentSilicon = math.ceil(((math.ceil((silicon.getItemsMass()/weightSilic
 
 --[[ Hydrogen ]]--
 local maxHydrogen = 82300 --export: This is the maximum mass allowed in container. Update as needed
-local weightHydrogen = 2.33 --export:
+local weightHydrogen = 0.07 --export:
 
 if use_L_or_Kg == 1 then
-    massHydrogen = round(math.ceil(hydrogen.getItemsMass()/weightSilicon),2)
+    massHydrogen = round(math.ceil(hydrogen.getItemsMass()/weightHydrogen),2)
     measurement = "kL"
 elseif use_L_or_Kg == 0 then  
     massHydrogen = round(math.ceil(hydrogen.getItemsMass()),2)
@@ -84,6 +84,20 @@ elseif use_L_or_Kg == 0 then
 end
 
 local percentHydrogen = math.ceil(((math.ceil((hydrogen.getItemsMass()/weightHydrogen) - 0.5)/maxHydrogen)*100))
+
+--[[ Oxygen ]]--
+local maxOxygen = 82300 --export: This is the maximum mass allowed in container. Update as needed
+local weightOxygen = 1.0 --export:
+
+if use_L_or_Kg == 1 then
+    massOxygen = round(math.ceil(oxygen.getItemsMass()/weightOxygen),2)
+    measurement = "kL"
+elseif use_L_or_Kg == 0 then  
+    massOxygen = round(math.ceil(oxygen.getItemsMass()),2)
+    measurement = "Kg"
+end
+
+local percentOxygen = math.ceil(((math.ceil((oxygen.getItemsMass()/weightOxygen) - 0.5)/maxOxygen)*100))
 
 --[[ HTML CODE STARTS HERE ]]--
 
@@ -132,6 +146,11 @@ html = [[
 		<th>Hydrogen</th>
 		<th>]]..percentHydrogen..[[%</th>
 		<th>]]..massHydrogen..measurement..[[</th>
+	</tr>
+	<tr>
+		<th>Oxygen</th>
+		<th>]]..percentOxygen..[[%</th>
+		<th>]]..massOxygen..measurement..[[</th>
 	</tr>
 
 </table>
