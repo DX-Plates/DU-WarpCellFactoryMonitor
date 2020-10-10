@@ -1,5 +1,5 @@
 # DU-WarpCellFactoryMonitor
-LUA Script for monitoring Pure Ingot stock in a Warp Cell Factory. 
+LUA Script for monitoring Pure Ingot stock in a Factory. 
 
 ![Ore Status Dashboard](/ContainerMonitor.PNG)
 
