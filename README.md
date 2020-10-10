@@ -17,6 +17,8 @@ Link each board to a screen, I used Medium Screens. Name that slot on the board 
 
 Once everything is linked, and all the slots are named, we need to setup the monitor scripts. Under the `unit` slot add 3 Filters. One for tick, which is set to `screen`, one for stop and one for start.  Put that start and stop scripts into the start and stop filters. This will turn the screens on and off with the board. Then put the main script into the tick filter. 
 
+Optional Portion: To use the timers use the scripts that have WithTimers on the end. You will need to update the usedPerHour variable for each resource to match your factories useage. 
+
 Apply your changes.
 
 Activate the board.
