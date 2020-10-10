@@ -3,6 +3,9 @@ LUA Script for monitoring Pure Ingot stock in a Warp Cell Factory.
 
 ![Ore Status Dashboard](/ContainerMonitor.PNG)
 
+With Optional Timers Configured:
+![Ore Status Dashboard with Optional Timer](/ContainerMonitorWithTimer.PNG)
+
 # Setup
 You'll need 2 programming boards, one for each monitor screen.
 
@@ -16,4 +19,4 @@ Once everything is linked, and all the slots are named, we need to setup the mon
 
 Apply your changes.
 
-Active the board.
+Activate the board.
