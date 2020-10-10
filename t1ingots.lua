@@ -110,7 +110,7 @@ html = [[
 		width: 100%;
 		color: white;
 	">
-	<th>Warp Cell Factory T1 Pure Status</th>
+	<th>Warp Cell T1 Pure Status</th>
 
 	<tr style="
 		width: 100%;
